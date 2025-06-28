@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5ff;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+}
+
+header {
+    background-color: #9696e5;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.inicio {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.inicio a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.inicio a:hover {
+    background-color: #7a7ac7;
+}
+
+.section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.profile-text {
+    flex: 1;
+}
+
+.name {
+    font-size: 2.5rem;
+    color: #9696e5;
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    font-size: 1.5rem;
+    color: #7a7ac7;
+    margin-bottom: 1rem;
+}
+
+.descripcion {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.perfil-img {
+    border-radius: 50%;
+    border: 4px solid #9696e5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    idth: 1200%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.skills-container {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.skill-type {
+    flex: 1;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-type h3 {
+    color: #9696e5;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #9696e5;
+    padding-bottom: 0.5rem;
+}
+
+.skill-type ul {
+    list-style-position: inside;
+    line-height: 2;
+}
+.skill-type {
+  background-color: #f3e5f5;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #9c27b0;
+}
+
+ .skill-type:after {
+  background: #9c27b0;
+}
+
+ul.skill-type li {
+  background: #f3e5f5;
+  color: #7b1fa2;
+  border: 1px solid #e1bee7;
+  transform: translateY(-5px);
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+ul.skill-type li:hover {
+  background: #ab47bc;
+  color: white;
+}
+ul {
+  padding-left: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1.2rem;
+  list-style: none;
+}
+
+ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #2980b9;
+  font-weight: bold;
+}
+
+
+.proyectos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.proyecto-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.proyecto-card:hover {
+    transform: translateY(-5px);
+}
+
+.proyecto-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.proyecto-card h3 {
+    padding: 1rem 1rem 0;
+    color: #9696e5;
+}
+
+.proyecto-card p {
+    padding: 0 1rem 1rem;
+    color: #333;
+}
+
+.proyecto-link {
+    display: block;
+    background-color: #9696e5;
+    color: white;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+    border-radius: 0 0 8px 8px;
+    transition: background-color 0.3s;
+}
+
+.proyecto-link:hover {
+    background-color: #7a7ac7;
+}
+
+footer {
+    background-color: #9696e5;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.contacto-info {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contacto-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contacto-info a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .skills-container {
+        flex-direction: column;
+    }
+    .proyectos-container {
+        grid-template-columns: 1fr;
+    }
+}
+h1,h2{
+     font-family: 'Pacifico', cursive;
+}
